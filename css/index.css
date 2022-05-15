@@ -32,6 +32,19 @@ li {
     color: #FF008E;
 }
 
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    border-bottom: 2px solid #FF008E;
+    margin: 50px 0;
+}
+
 /* ===================
 ===header part style==
 ======================*/
@@ -126,4 +139,54 @@ nav {
 
 .banner-right img {
     width: 100%;
+}
+
+/* feature part style */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 30px 35px rgb(0 0 0 / 10%);
+}
+
+.card .icon {
+    color: #fff;
+    padding: 20px;
+    background-color: #FF008E;
+    border: 2px solid #941e5f;
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+.card .card-title {
+    color: #FF008E;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.card .card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.card .card-btn {
+    color: #FF008E;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+    text-align: right;
 }
