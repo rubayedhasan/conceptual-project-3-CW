@@ -116,7 +116,7 @@ nav {
     background: linear-gradient(90deg, #941e5f, #FF008E);
     padding: 16px 20px;
     border: 0;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
     box-shadow: 0 7px 0 0 #941e5f;
@@ -189,4 +189,35 @@ nav {
 .card:nth-child(1),
 .card:nth-child(3) {
     text-align: right;
+}
+
+/* about part style */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.about-left img {
+    width: 100%;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-right .title {
+    color: #FF008E;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-right .text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 10px 0;
 }
