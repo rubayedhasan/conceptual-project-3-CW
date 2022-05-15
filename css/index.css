@@ -1,0 +1,67 @@
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* universal style */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: 0;
+    box-sizing: border-box;
+}
+
+/* common style */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ===================
+===header part style==
+======================*/
+
+header {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    margin: 5px;
+}
+
+.navbar li a {
+    padding: 15px 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar li a:hover {
+    color: #FF008E;
+}
