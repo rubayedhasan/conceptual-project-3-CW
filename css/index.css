@@ -221,3 +221,66 @@ nav {
     line-height: 1.5;
     margin: 10px 0;
 }
+
+/* gallery part style */
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.photo {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    border: 2px solid #941e5f;
+    cursor: zoom-in;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.photo::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 5;
+    transition: all 0.2s ease;
+}
+
+.photo:hover::before {
+    opacity: 1;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+.photo:hover img {
+    transform: scale(1.2);
+}
+
+/* footer part style */
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer p a {
+    text-decoration: underline;
+}
