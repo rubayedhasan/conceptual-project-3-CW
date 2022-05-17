@@ -247,7 +247,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     z-index: 5;
     transition: all 0.2s ease;
@@ -257,15 +257,74 @@ nav {
     opacity: 1;
 }
 
+.border {
+    position: absolute;
+    background: linear-gradient(90deg, #941e5f, #FF008E);
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+}
+
+.border.top,
+.border.bottom {
+    height: 5px;
+    width: 252px;
+}
+
+.border.left,
+.border.right {
+    width: 5px;
+    height: 160px;
+}
+
+.border.top {
+    top: 10px;
+    left: 23px;
+    transform: translateX(-350px);
+}
+
+.border.right {
+    bottom: 18px;
+    right: 8px;
+    transform: translateY(-350px);
+}
+
+.border.bottom {
+    bottom: 10px;
+    right: 22px;
+    transform: translateX(350px);
+}
+
+.border.left {
+    top: 17px;
+    left: 10px;
+    transform: translateY(350px);
+}
+
+.photo:hover .border.top {
+    transform: translateX(0) scale(1.1);
+}
+
+.photo:hover .border.right {
+    transform: translateY(0) scale(1.1);
+}
+
+.photo:hover .border.bottom {
+    transform: translateX(0) scale(1.1);
+}
+
+.photo:hover .border.left {
+    transform: translateY(0) scale(1.1);
+}
+
 .photo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in-out;
 }
 
 .photo:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* contact part style */
